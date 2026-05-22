@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conferencias – Colombia 5.0</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">COL<span>5.0</span></div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio / Home</a></li>
+      <li><a href="conferencias.html" class="active">Conferencias</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+      <li><a href="conclusion.html">Conclusión</a></li>
+    </ul>
+    <button class="lang-btn" onclick="toggleLang()">EN / ES</button>
+  </nav>
+
+  <div class="page-hero">
+    <h1 data-es="Conferencias & Talleres" data-en="Talks & Workshops">Conferencias & Talleres</h1>
+    <p data-es="Documentación bilingüe de las sesiones más relevantes del evento Colombia 5.0." data-en="Bilingual documentation of the most relevant sessions at the Colombia 5.0 event.">Documentación bilingüe de las sesiones más relevantes del evento Colombia 5.0.</p>
+  </div>
+
+  <!-- CONFERENCIA 1: GAME UI -->
+  <section class="conf-section" id="game-ui">
+    <div class="container">
+      <div class="conf-header">
+        <span class="conf-tag-big primary" data-es="TALLER ASIGNADO" data-en="ASSIGNED WORKSHOP">TALLER ASIGNADO</span>
+        <div>
+          <h2 class="conf-title" data-es="Game UI Systems: De Pantallas Bonitas a Interfaces que Funcionan" data-en="Game UI Systems: From Pretty Screens to Interfaces that Work">Game UI Systems: De Pantallas Bonitas a Interfaces que Funcionan</h2>
+          <div class="conf-meta">
+            <span>🎙 Andrés Felipe Pisso Tobar</span>
+            <span data-es="Lead UX Designer · Teravision Games" data-en="Lead UX Designer · Teravision Games">Lead UX Designer · Teravision Games</span>
+            <span data-es="Taller práctico" data-en="Hands-on Workshop">Taller práctico</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="keyword-label" data-es="TEMA PRINCIPAL" data-en="MAIN TOPIC">TEMA PRINCIPAL</p>
+      <p style="color:var(--text-muted); margin-bottom:32px;" data-es="Diseño de sistemas de interfaz de usuario para videojuegos: cómo crear componentes, variables de diseño, tipografía y paletas de color escalables utilizando Figma como herramienta central, con foco en la coherencia visual y la funcionalidad real de la UI en producción." data-en="Design of user interface systems for video games: how to create scalable components, design variables, typography, and color palettes using Figma as the central tool, focusing on visual consistency and real UI functionality in production.">Diseño de sistemas de interfaz de usuario para videojuegos: cómo crear componentes, variables de diseño, tipografía y paletas de color escalables utilizando Figma como herramienta central, con foco en la coherencia visual y la funcionalidad real de la UI en producción.</p>
+
+      <!-- Bilingual summary -->
+      <div class="bilingual-block">
+        <div class="lang-panel es">
+          <h4>🇨🇴 Resumen en Español</h4>
+          <p>Andrés Felipe Pisso Tobar, Lead UX Designer en Teravision Games, presentó un taller práctico profundo sobre cómo construir sistemas de UI para videojuegos que no solo luzcan bien, sino que realmente funcionen en producción. El taller estuvo organizado alrededor de un archivo de Figma llamado "Game UI Systems Workshop", donde los participantes exploraron en vivo la construcción de un design system completo.</p>
+          <br>
+          <p>El conferencista comenzó por establecer la diferencia entre una pantalla visualmente atractiva y una interfaz funcional: la UI de juegos no puede ser solo decorativa; debe comunicar estado del juego, guiar al jugador y responder bajo cualquier condición de rendimiento. Con esto, introdujo el concepto de tokens de diseño como base de un sistema: variables de color, espacio y tipografía que hacen que todo el sistema sea coherente, mantenible y escalable.</p>
+          <br>
+          <p>Durante la sesión se exploró la construcción de variables de color organizadas por semántica: Principal, Alerta, Peligro, Premio, Bloqueado y Fuego. Se demostró cómo cada token tiene un valor base y un valor de referencia, permitiendo cambiar temas completos con un solo ajuste. Luego se pasó a tipografía: la importancia de elegir fuentes legibles bajo condiciones de pantalla de televisión o móvil y cómo definir escala tipográfica dentro del sistema.</p>
+          <br>
+          <p>La parte más práctica mostró la construcción de componentes reutilizables: barras de progreso de salud, íconos de categoría, botones y layouts de HUD. Cada componente fue construido con variantes y estados (hover, desactivado, activo) y conectado a las variables del sistema, de modo que un cambio en el token se propaga automáticamente a todos los componentes que lo usen. El resultado final fue un sistema robusto, documentado y listo para ser entregado a un equipo de desarrollo.</p>
+        </div>
+        <div class="lang-panel en">
+          <h4>🇺🇸 Summary in English</h4>
+          <p>Andrés Felipe Pisso Tobar, Lead UX Designer at Teravision Games, delivered an in-depth hands-on workshop on building UI systems for video games that not only look great but actually work in production. The workshop was organized around a Figma file called "Game UI Systems Workshop," where participants explored the construction of a complete design system in real time.</p>
+          <br>
+          <p>The speaker started by establishing the difference between a visually attractive screen and a functional interface: game UI cannot be merely decorative; it must communicate game state, guide the player, and respond under any performance condition. He introduced the concept of design tokens as the foundation of any system: color, space, and typography variables that make the entire system coherent, maintainable, and scalable.</p>
+          <br>
+          <p>The session explored the construction of color variables organized by semantics: Primary, Alert, Danger, Reward, Blocked, and Fire. It was demonstrated how each token has a base value and a reference value, allowing complete theme changes with a single adjustment. Typography was then covered: the importance of choosing fonts readable under TV or mobile screen conditions, and how to define a type scale within the system.</p>
+          <br>
+          <p>The most practical part showed the construction of reusable components: health progress bars, category icons, buttons, and HUD layouts. Each component was built with variants and states (hover, disabled, active) and connected to system variables, so a change in the token propagates automatically to all components using it. The final result was a robust, documented system ready to be handed off to a development team.</p>
+        </div>
+      </div>
+
+      <!-- Keywords -->
+      <p class="keyword-label" data-es="PALABRAS CLAVE" data-en="KEYWORDS">PALABRAS CLAVE</p>
+      <div class="keywords">
+        <span class="keyword">Design System</span>
+        <span class="keyword">Design Tokens</span>
+        <span class="keyword">UI Components</span>
+        <span class="keyword">Figma Variables</span>
+        <span class="keyword">Color Semantics</span>
+        <span class="keyword">Typography Scale</span>
+        <span class="keyword">HUD Design</span>
+        <span class="keyword">Component Variants</span>
+        <span class="keyword">Game UI</span>
+        <span class="keyword">UX Design</span>
+        <span class="keyword">Auto-layout</span>
+        <span class="keyword">Responsive Components</span>
+      </div>
+
+      <!-- Photos -->
+      <p class="keyword-label" data-es="GALERÍA DEL TALLER" data-en="WORKSHOP GALLERY">GALERÍA DEL TALLER</p>
+      <div class="photo-grid">
+        <div class="photo-placeholder">
+          <img src="../images/img1.jpg" alt="Taller Game UI Systems" onerror="this.parentElement.innerHTML='<span>📸</span><span>Foto 1 – Presentación del taller</span>'">
+        </div>
+        <div class="photo-placeholder">
+          <img src="../images/img2.jpg" alt="Conferencista presentando" onerror="this.parentElement.innerHTML='<span>📸</span><span>Foto 2 – Automatizaciones IA</span>'">
+        </div>
+        <div class="photo-placeholder">
+          <img src="../images/img3.jpg" alt="Figma variables" onerror="this.parentElement.innerHTML='<span>📸</span><span>Foto 3 – Figma variables en vivo</span>'">
+        </div>
+        <div class="photo-placeholder">
+          <img src="../images/img4.jpg" alt="Sistema de colores" onerror="this.parentElement.innerHTML='<span>📸</span><span>Foto 4 – Sistema de colores</span>'">
+        </div>
+        <div class="photo-placeholder">
+          <img src="../images/img5.jpg" alt="Bases del sistema" onerror="this.parentElement.innerHTML='<span>📸</span><span>Foto 5 – Bases del sistema</span>'">
+        </div>
+        <div class="photo-placeholder">
+          <img src="../images/img6.jpg" alt="Componentes Figma" onerror="this.parentElement.innerHTML='<span>📸</span><span>Foto 6 – Componentes en Figma</span>'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFERENCIA 2: AUTOMATIZACION -->
+  <section class="conf-section" id="automatizacion">
+    <div class="container">
+      <div class="conf-header">
+        <span class="conf-tag-big secondary" data-es="CONFERENCIA LIBRE" data-en="FREE CHOICE TALK">CONFERENCIA LIBRE</span>
+        <div>
+          <h2 class="conf-title" data-es="Automatizaciones y Localización con Inteligencia Artificial" data-en="Automation and Localization with Artificial Intelligence">Automatizaciones y Localización con Inteligencia Artificial</h2>
+          <div class="conf-meta">
+            <span>🎙 Colombia 5.0 Speaker</span>
+            <span data-es="Track: Inteligencia Artificial" data-en="Track: Artificial Intelligence">Track: Inteligencia Artificial</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="keyword-label" data-es="TEMA PRINCIPAL" data-en="MAIN TOPIC">TEMA PRINCIPAL</p>
+      <p style="color:var(--text-muted); margin-bottom:32px;" data-es="Cómo la inteligencia artificial está transformando los flujos de trabajo de localización e internacionalización de productos digitales, automatizando procesos que anteriormente requerían semanas de trabajo manual, con especial énfasis en términos consistentes, términos similares y reglas de localización." data-en="How artificial intelligence is transforming the localization and internationalization workflows of digital products, automating processes that previously required weeks of manual work, with special emphasis on consistent terms, similar terms, and localization rules.">Cómo la inteligencia artificial está transformando los flujos de trabajo de localización e internacionalización de productos digitales, automatizando procesos que anteriormente requerían semanas de trabajo manual, con especial énfasis en términos consistentes, términos similares y reglas de localización.</p>
+
+      <div class="bilingual-block">
+        <div class="lang-panel es">
+          <h4>🇨🇴 Resumen en Español</h4>
+          <p>Esta conferencia exploró cómo la inteligencia artificial está revolucionando el campo de la localización de software e interfaces digitales. El conferencista presentó un panorama de las herramientas actuales que permiten automatizar desde la detección de cadenas de texto hasta la traducción contextual y la adaptación cultural de contenidos.</p>
+          <br>
+          <p>Se destacó la importancia de trabajar con términos consistentes (palabras o frases que deben mantenerse idénticas en toda la aplicación, como nombres de marca o comandos técnicos) y términos similares (palabras que pueden variar dependiendo del contexto, como "guardar" vs. "almacenar"). La IA permite entrenar modelos de traducción con glosarios específicos del producto, garantizando coherencia terminológica a gran escala.</p>
+          <br>
+          <p>También se presentaron los flujos de trabajo modernos de localización: cómo plataformas con IA integrada pueden procesar archivos de internacionalización, detectar inconsistencias, sugerir alternativas y mantener un historial de traducciones. La sesión concluyó con una reflexión sobre los límites éticos de la automatización: qué partes del proceso de localización deben seguir en manos humanas para garantizar precisión cultural y matices lingüísticos que la IA aún no puede capturar completamente.</p>
+        </div>
+        <div class="lang-panel en">
+          <h4>🇺🇸 Summary in English</h4>
+          <p>This talk explored how artificial intelligence is revolutionizing the field of software and digital interface localization. The speaker presented an overview of current tools that allow automating everything from text string detection to contextual translation and cultural adaptation of content.</p>
+          <br>
+          <p>The importance of working with consistent terms (words or phrases that must remain identical throughout the application, such as brand names or technical commands) and similar terms (words that may vary depending on context, such as "save" vs. "store") was highlighted. AI allows training translation models with product-specific glossaries, ensuring terminological consistency at scale.</p>
+          <br>
+          <p>Modern localization workflows were also presented: how AI-integrated platforms can process internationalization files, detect inconsistencies, suggest alternatives, and maintain a translation history. The session concluded with a reflection on the ethical limits of automation: which parts of the localization process must remain in human hands to guarantee cultural accuracy and linguistic nuances that AI cannot yet fully capture.</p>
+        </div>
+      </div>
+
+      <p class="keyword-label" data-es="PALABRAS CLAVE" data-en="KEYWORDS">PALABRAS CLAVE</p>
+      <div class="keywords">
+        <span class="keyword">Localization</span>
+        <span class="keyword">Internationalization (i18n)</span>
+        <span class="keyword">Automation</span>
+        <span class="keyword">Machine Translation</span>
+        <span class="keyword">Consistent Terms</span>
+        <span class="keyword">Similar Terms</span>
+        <span class="keyword">AI Workflows</span>
+        <span class="keyword">Cultural Adaptation</span>
+        <span class="keyword">NLP</span>
+        <span class="keyword">Translation Memory</span>
+        <span class="keyword">Glossary</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">COL<span>5.0</span></div>
+      <p>Proyecto académico · SENA – Centro de Manufactura en Textil y Cuero · 2025</p>
+      <nav class="footer-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="conferencias.html">Conferencias</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="conclusion.html">Conclusión</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../js/lang.js"></script>
+</body>
+</html>

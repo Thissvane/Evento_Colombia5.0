@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glossary – Colombia 5.0</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">COL<span>5.0</span></div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio / Home</a></li>
+      <li><a href="conferencias.html">Conferencias</a></li>
+      <li><a href="glossary.html" class="active">Glossary</a></li>
+      <li><a href="conclusion.html">Conclusión</a></li>
+    </ul>
+    <button class="lang-btn" onclick="toggleLang()">EN / ES</button>
+  </nav>
+
+  <div class="page-hero">
+    <h1>Technical Glossary</h1>
+    <p data-es="Más de 30 términos técnicos en inglés aprendidos durante el evento Colombia 5.0, con traducción al español y definición." data-en="More than 30 technical terms in English learned during the Colombia 5.0 event, with Spanish translation and definition.">Más de 30 términos técnicos en inglés aprendidos durante el evento Colombia 5.0, con traducción al español y definición.</p>
+  </div>
+
+  <section class="glossary-section">
+    <div class="container">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search terms... / Buscar términos..." oninput="filterGlossary()" />
+      </div>
+      <p class="gloss-count"><span id="termCount">35</span> terms / términos</p>
+      <table class="glossary-table" id="glossaryTable">
+        <thead>
+          <tr>
+            <th>English</th>
+            <th>Español</th>
+            <th>Definition / Definición</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Design System</td><td>Sistema de Diseño</td><td>A collection of reusable components, guided by clear standards, that can be assembled together to build applications. / Colección de componentes reutilizables guiados por estándares claros para construir aplicaciones.</td></tr>
+          <tr><td>Design Token</td><td>Token de Diseño</td><td>Named entities that store visual design attributes such as colors, typography, and spacing, used to maintain consistency across a system. / Entidades con nombre que almacenan atributos de diseño visual para mantener coherencia en un sistema.</td></tr>
+          <tr><td>User Interface (UI)</td><td>Interfaz de Usuario</td><td>The visual layer through which a user interacts with a software product. / La capa visual a través de la cual un usuario interactúa con un producto de software.</td></tr>
+          <tr><td>User Experience (UX)</td><td>Experiencia de Usuario</td><td>The overall experience of a person using a product, encompassing usability, accessibility, and satisfaction. / La experiencia general de una persona al usar un producto, abarcando usabilidad, accesibilidad y satisfacción.</td></tr>
+          <tr><td>Component</td><td>Componente</td><td>A reusable, self-contained UI element that can be combined with others to build interfaces. / Elemento de UI reutilizable y autónomo que se combina con otros para construir interfaces.</td></tr>
+          <tr><td>Variant</td><td>Variante</td><td>A different version of a component that reflects a specific state or style, such as primary, secondary, or disabled. / Versión diferente de un componente que refleja un estado o estilo específico.</td></tr>
+          <tr><td>Auto-layout</td><td>Auto-disposición</td><td>A Figma feature that automatically arranges child elements within a frame, adapting to content changes. / Función de Figma que dispone automáticamente los elementos hijos dentro de un marco.</td></tr>
+          <tr><td>Color Palette</td><td>Paleta de Colores</td><td>A defined set of colors used consistently throughout a design system or product. / Conjunto definido de colores usados de manera consistente en un sistema de diseño o producto.</td></tr>
+          <tr><td>Typography Scale</td><td>Escala Tipográfica</td><td>A systematic set of font sizes and weights that define visual hierarchy in a design. / Conjunto sistemático de tamaños y pesos de fuente que define la jerarquía visual.</td></tr>
+          <tr><td>HUD (Heads-Up Display)</td><td>Pantalla de información superpuesta</td><td>In gaming, the visual layer displayed on screen that shows game information like health, score, and map. / En videojuegos, la capa visual que muestra información como salud, puntaje y mapa.</td></tr>
+          <tr><td>Localization</td><td>Localización</td><td>The process of adapting a product to a specific locale, including language, culture, and regional formats. / Proceso de adaptar un producto a un idioma, cultura y formato regional específicos.</td></tr>
+          <tr><td>Internationalization (i18n)</td><td>Internacionalización</td><td>The design process of making a product ready for adaptation to multiple languages and regions without re-engineering. / Proceso de diseño para preparar un producto para múltiples idiomas y regiones sin rediseñar.</td></tr>
+          <tr><td>Machine Translation</td><td>Traducción Automática</td><td>The use of software and AI to automatically translate text from one language to another. / Uso de software e IA para traducir automáticamente texto de un idioma a otro.</td></tr>
+          <tr><td>Translation Memory</td><td>Memoria de Traducción</td><td>A database that stores previously translated text segments to ensure consistency and speed up future translations. / Base de datos que almacena segmentos de texto traducidos previamente para garantizar consistencia.</td></tr>
+          <tr><td>Consistent Terms</td><td>Términos Consistentes</td><td>Words or phrases that must remain identical throughout an application, such as brand names or specific commands. / Palabras o frases que deben mantenerse idénticas en toda la aplicación.</td></tr>
+          <tr><td>Artificial Intelligence (AI)</td><td>Inteligencia Artificial (IA)</td><td>The simulation of human intelligence processes by computer systems, including learning, reasoning, and self-correction. / Simulación de procesos de inteligencia humana por sistemas computarizados.</td></tr>
+          <tr><td>Automation</td><td>Automatización</td><td>The use of technology to perform tasks with minimal human intervention, increasing efficiency and consistency. / Uso de tecnología para realizar tareas con mínima intervención humana.</td></tr>
+          <tr><td>Wireframe</td><td>Esquema de página</td><td>A low-fidelity visual representation of a UI layout, focusing on structure rather than visual design. / Representación visual de baja fidelidad de un diseño de UI, centrada en la estructura.</td></tr>
+          <tr><td>Prototype</td><td>Prototipo</td><td>An interactive simulation of a product used to test and validate design decisions before development. / Simulación interactiva de un producto usada para probar y validar decisiones de diseño antes del desarrollo.</td></tr>
+          <tr><td>Responsive Design</td><td>Diseño Responsivo</td><td>An approach to web design that makes web pages render well on a variety of devices and window or screen sizes. / Enfoque de diseño web que hace que las páginas se vean bien en diferentes dispositivos y tamaños de pantalla.</td></tr>
+          <tr><td>Accessibility (a11y)</td><td>Accesibilidad</td><td>The design practice of making products usable by people with disabilities, including visual, auditory, motor, or cognitive impairments. / Práctica de diseño para hacer productos utilizables por personas con discapacidades.</td></tr>
+          <tr><td>Cloud Computing</td><td>Computación en la Nube</td><td>The delivery of computing services including servers, storage, databases, networking, and software over the internet. / Entrega de servicios de computación como servidores, almacenamiento y software a través de internet.</td></tr>
+          <tr><td>API (Application Programming Interface)</td><td>Interfaz de Programación de Aplicaciones</td><td>A set of rules that allows different software applications to communicate with each other. / Conjunto de reglas que permite que diferentes aplicaciones de software se comuniquen entre sí.</td></tr>
+          <tr><td>Frontend</td><td>Interfaz de cara al usuario</td><td>The part of a web application that users interact with directly, built with HTML, CSS, and JavaScript. / Parte de una aplicación web con la que los usuarios interactúan directamente.</td></tr>
+          <tr><td>Backend</td><td>Parte del servidor</td><td>The server-side of a web application that handles business logic, databases, and application functionality. / Lado del servidor de una aplicación web que maneja lógica de negocio y bases de datos.</td></tr>
+          <tr><td>Version Control</td><td>Control de versiones</td><td>A system that records changes to files over time so specific versions can be recalled later. / Sistema que registra cambios en archivos a lo largo del tiempo para poder recuperar versiones específicas.</td></tr>
+          <tr><td>Repository</td><td>Repositorio</td><td>A storage location for software packages, often managed with version control systems like Git. / Ubicación de almacenamiento para paquetes de software, generalmente gestionada con sistemas de control de versiones.</td></tr>
+          <tr><td>Framework</td><td>Marco de trabajo</td><td>A pre-written code library that provides a structure and set of tools to help developers build applications more efficiently. / Biblioteca de código preescrita que proporciona estructura y herramientas para construir aplicaciones de manera eficiente.</td></tr>
+          <tr><td>User Research</td><td>Investigación de usuarios</td><td>The systematic study of target users to understand their behaviors, needs, and motivations to improve product design. / Estudio sistemático de usuarios objetivo para entender comportamientos, necesidades y motivaciones.</td></tr>
+          <tr><td>Usability</td><td>Usabilidad</td><td>The ease with which users can use a product to achieve their goals effectively, efficiently, and satisfactorily. / Facilidad con la que los usuarios pueden usar un producto para lograr sus objetivos de manera efectiva.</td></tr>
+          <tr><td>Iteration</td><td>Iteración</td><td>The repetition of a process where each cycle builds upon the results of the previous one to continuously improve a product. / Repetición de un proceso donde cada ciclo se basa en los resultados del anterior para mejorar continuamente.</td></tr>
+          <tr><td>Natural Language Processing (NLP)</td><td>Procesamiento del Lenguaje Natural</td><td>A branch of AI that helps computers understand, interpret, and generate human language. / Rama de la IA que ayuda a las computadoras a entender, interpretar y generar lenguaje humano.</td></tr>
+          <tr><td>Scalability</td><td>Escalabilidad</td><td>The ability of a system to handle increased workload or demand without compromising performance. / Capacidad de un sistema para manejar mayor carga de trabajo sin comprometer el rendimiento.</td></tr>
+          <tr><td>Agile</td><td>Ágil</td><td>A project management and software development approach that encourages flexible, iterative work and collaboration. / Enfoque de gestión de proyectos y desarrollo de software que fomenta el trabajo flexible e iterativo.</td></tr>
+          <tr><td>Data Ethics</td><td>Ética de datos</td><td>The branch of ethics that evaluates data practices to ensure they align with moral principles, particularly regarding privacy, consent, and fairness. / Rama de la ética que evalúa prácticas de datos para garantizar su alineación con principios morales.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">COL<span>5.0</span></div>
+      <p>Proyecto académico · SENA – Centro de Manufactura en Textil y Cuero · 2025</p>
+      <nav class="footer-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="conferencias.html">Conferencias</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="conclusion.html">Conclusión</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/lang.js"></script>
+  <script>
+    function filterGlossary() {
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      const rows = document.querySelectorAll('#glossaryTable tbody tr');
+      let count = 0;
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        const show = text.includes(q);
+        row.style.display = show ? '' : 'none';
+        if (show) count++;
+      });
+      document.getElementById('termCount').textContent = count;
+    }
+  </script>
+</body>
+</html>
