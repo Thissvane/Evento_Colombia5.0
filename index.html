@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colombia 5.0 – Evento Tecnológico</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">COL<span>5.0</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Inicio / Home</a></li>
+      <li><a href="pages/conferencias.html">Conferencias</a></li>
+      <li><a href="pages/glossary.html">Glossary</a></li>
+      <li><a href="pages/conclusion.html">Conclusión</a></li>
+    </ul>
+    <button class="lang-btn" onclick="toggleLang()">EN / ES</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="badge" data-es="Evento Tecnológico · Bogotá, Colombia" data-en="Tech Event · Bogotá, Colombia">Evento Tecnológico · Bogotá, Colombia</div>
+      <h1>
+        <span class="hero-col" data-es="Colombia" data-en="Colombia">Colombia</span>
+        <span class="hero-num">5.0</span>
+      </h1>
+      <p class="hero-sub" data-es="El encuentro de innovación, diseño y tecnología más relevante del país. Conectando mentes, herramientas y el futuro del desarrollo digital." data-en="The most relevant innovation, design, and technology gathering in the country. Connecting minds, tools, and the future of digital development.">
+        El encuentro de innovación, diseño y tecnología más relevante del país. Conectando mentes, herramientas y el futuro del desarrollo digital.
+      </p>
+      <div class="hero-ctas">
+        <a href="pages/conferencias.html" class="btn btn-primary" data-es="Ver Conferencias" data-en="View Talks">Ver Conferencias</a>
+        <a href="pages/glossary.html" class="btn btn-outline" data-es="Glosario Técnico" data-en="Technical Glossary">Glosario Técnico</a>
+      </div>
+    </div>
+    <div class="hero-deco">
+      <div class="deco-circle c1"></div>
+      <div class="deco-circle c2"></div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 data-es="¿Qué es Colombia 5.0?" data-en="What is Colombia 5.0?">¿Qué es Colombia 5.0?</h2>
+          <p data-es="Colombia 5.0 es un evento tecnológico nacional que reúne a profesionales, estudiantes y empresas líderes del sector digital. Durante un día intenso de conferencias, talleres y networking, los asistentes exploran las tendencias más avanzadas en inteligencia artificial, diseño UX, desarrollo de videojuegos, automatización y más." data-en="Colombia 5.0 is a national tech event that brings together professionals, students, and leading digital industry companies. During a full day of talks, workshops, and networking, attendees explore cutting-edge trends in artificial intelligence, UX design, game development, automation, and more.">
+            Colombia 5.0 es un evento tecnológico nacional que reúne a profesionales, estudiantes y empresas líderes del sector digital. Durante un día intenso de conferencias, talleres y networking, los asistentes exploran las tendencias más avanzadas en inteligencia artificial, diseño UX, desarrollo de videojuegos, automatización y más.
+          </p>
+          <p data-es="Este sitio documenta las experiencias, aprendizajes y reflexiones obtenidas durante la participación en el evento, como parte del proceso formativo del SENA – Centro de Manufactura en Textil y Cuero." data-en="This site documents the experiences, learnings, and reflections obtained during participation in the event, as part of the training process at SENA – Centro de Manufactura en Textil y Cuero.">
+            Este sitio documenta las experiencias, aprendizajes y reflexiones obtenidas durante la participación en el evento, como parte del proceso formativo del SENA – Centro de Manufactura en Textil y Cuero.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">2</span>
+            <span class="stat-label" data-es="Conferencias documentadas" data-en="Documented talks">Conferencias documentadas</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">30+</span>
+            <span class="stat-label" data-es="Términos en glosario" data-en="Glossary terms">Términos en glosario</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2</span>
+            <span class="stat-label" data-es="Idiomas" data-en="Languages">Idiomas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="talks-preview">
+    <div class="container">
+      <h2 class="section-title" data-es="Conferencias Destacadas" data-en="Featured Talks">Conferencias Destacadas</h2>
+      <div class="talks-grid">
+        <a href="pages/conferencias.html#game-ui" class="talk-card">
+          <div class="talk-tag" data-es="TALLER ASIGNADO" data-en="ASSIGNED WORKSHOP">TALLER ASIGNADO</div>
+          <h3 data-es="Game UI Systems: De Pantallas Bonitas a Interfaces que Funcionan" data-en="Game UI Systems: From Pretty Screens to Interfaces that Work">Game UI Systems: De Pantallas Bonitas a Interfaces que Funcionan</h3>
+          <p class="talk-speaker">Andrés Felipe Pisso Tobar</p>
+          <p class="talk-role" data-es="Lead UX Designer · Teravision Games" data-en="Lead UX Designer · Teravision Games">Lead UX Designer · Teravision Games</p>
+          <span class="talk-more" data-es="Leer más →" data-en="Read more →">Leer más →</span>
+        </a>
+        <a href="pages/conferencias.html#automatizacion" class="talk-card">
+          <div class="talk-tag alt" data-es="CONFERENCIA LIBRE" data-en="FREE CHOICE TALK">CONFERENCIA LIBRE</div>
+          <h3 data-es="Automatizaciones y Localización con IA" data-en="Automation and Localization with AI">Automatizaciones y Localización con IA</h3>
+          <p class="talk-speaker">Conferencista Colombia 5.0</p>
+          <p class="talk-role" data-es="Track de Inteligencia Artificial" data-en="Artificial Intelligence Track">Track de Inteligencia Artificial</p>
+          <span class="talk-more" data-es="Leer más →" data-en="Read more →">Leer más →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="objective-section">
+    <div class="container">
+      <div class="obj-card">
+        <h2 data-es="Objetivo del Sitio" data-en="Site Objective">Objetivo del Sitio</h2>
+        <p data-es="Documentar, analizar y compartir el conocimiento adquirido durante el evento Colombia 5.0, desarrollando competencias en diseño web, escritura bilingüe y pensamiento crítico sobre el impacto ético de la tecnología en la sociedad." data-en="Document, analyze, and share knowledge acquired during the Colombia 5.0 event, developing skills in web design, bilingual writing, and critical thinking about the ethical impact of technology on society.">
+          Documentar, analizar y compartir el conocimiento adquirido durante el evento Colombia 5.0, desarrollando competencias en diseño web, escritura bilingüe y pensamiento crítico sobre el impacto ético de la tecnología en la sociedad.
+        </p>
+        <a href="pages/conclusion.html" class="btn btn-primary" data-es="Ver Reflexión Ética" data-en="View Ethical Reflection">Ver Reflexión Ética</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">COL<span>5.0</span></div>
+      <p data-es="Proyecto académico · SENA – Centro de Manufactura en Textil y Cuero · 2025" data-en="Academic project · SENA – Centro de Manufactura en Textil y Cuero · 2025">Proyecto académico · SENA – Centro de Manufactura en Textil y Cuero · 2025</p>
+      <nav class="footer-nav">
+        <a href="index.html">Inicio</a>
+        <a href="pages/conferencias.html">Conferencias</a>
+        <a href="pages/glossary.html">Glossary</a>
+        <a href="pages/conclusion.html">Conclusión</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/lang.js"></script>
+</body>
+</html>
