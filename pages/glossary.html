@@ -1,113 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Glossary – Colombia 5.0</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glossary - Colombia 5.0</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="nav-brand">COL<span>5.0</span></div>
-    <ul class="nav-links">
-      <li><a href="../index.html">Inicio / Home</a></li>
-      <li><a href="conferencias.html">Conferencias</a></li>
-      <li><a href="glossary.html" class="active">Glossary</a></li>
-      <li><a href="conclusion.html">Conclusión</a></li>
-    </ul>
-    <button class="lang-btn" onclick="toggleLang()">EN / ES</button>
-  </nav>
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">
+      <span class="brand-co">Colombia</span><span class="brand-num">5.0</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferencias.html">Conferencias</a></li>
+        <li class="nav-item"><a class="nav-link active" href="glossary.html">Glossary</a></li>
+        <li class="nav-item"><a class="nav-link" href="etica.html">Ética & Conclusión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <div class="page-hero">
-    <h1>Technical Glossary</h1>
-    <p data-es="Más de 30 términos técnicos en inglés aprendidos durante el evento Colombia 5.0, con traducción al español y definición." data-en="More than 30 technical terms in English learned during the Colombia 5.0 event, with Spanish translation and definition.">Más de 30 términos técnicos en inglés aprendidos durante el evento Colombia 5.0, con traducción al español y definición.</p>
+<section class="page-header">
+  <div class="container">
+    <span class="section-label">Technical Vocabulary · Colombia 5.0 2026</span>
+    <h1 class="mt-2 text-white">Technical<br/><span class="accent">Glossary</span></h1>
+    <p class="mt-3" style="color:#888;max-width:600px;">Una apuesta por el crecimiento econòmico con equidad en las regiones.<span class="accent">Cambridge Dictionary</span>
+  </div>
+</section>
+
+<main class="py-5" style="background:var(--dark);">
+<div class="container">
+
+  <!-- Search -->
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <div class="input-group">
+        <span class="input-group-text" style="background:var(--dark3);border-color:rgba(247,201,72,0.2);color:var(--accent);">
+          <i class="fa fa-search"></i>
+        </span>
+        <input type="text" id="glossarySearch" class="glossary-search" placeholder="Search term / Buscar término…" oninput="filterGlossary()"/>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
+      <span style="color:var(--text-muted);font-size:0.85rem;" id="termCount">35 términos</span>
+    </div>
   </div>
 
-  <section class="glossary-section">
-    <div class="container">
-      <div class="search-wrap">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" placeholder="Search terms... / Buscar términos..." oninput="filterGlossary()" />
-      </div>
-      <p class="gloss-count"><span id="termCount">35</span> terms / términos</p>
-      <table class="glossary-table" id="glossaryTable">
-        <thead>
-          <tr>
-            <th>English</th>
-            <th>Español</th>
-            <th>Definition / Definición</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Design System</td><td>Sistema de Diseño</td><td>A collection of reusable components, guided by clear standards, that can be assembled together to build applications. / Colección de componentes reutilizables guiados por estándares claros para construir aplicaciones.</td></tr>
-          <tr><td>Design Token</td><td>Token de Diseño</td><td>Named entities that store visual design attributes such as colors, typography, and spacing, used to maintain consistency across a system. / Entidades con nombre que almacenan atributos de diseño visual para mantener coherencia en un sistema.</td></tr>
-          <tr><td>User Interface (UI)</td><td>Interfaz de Usuario</td><td>The visual layer through which a user interacts with a software product. / La capa visual a través de la cual un usuario interactúa con un producto de software.</td></tr>
-          <tr><td>User Experience (UX)</td><td>Experiencia de Usuario</td><td>The overall experience of a person using a product, encompassing usability, accessibility, and satisfaction. / La experiencia general de una persona al usar un producto, abarcando usabilidad, accesibilidad y satisfacción.</td></tr>
-          <tr><td>Component</td><td>Componente</td><td>A reusable, self-contained UI element that can be combined with others to build interfaces. / Elemento de UI reutilizable y autónomo que se combina con otros para construir interfaces.</td></tr>
-          <tr><td>Variant</td><td>Variante</td><td>A different version of a component that reflects a specific state or style, such as primary, secondary, or disabled. / Versión diferente de un componente que refleja un estado o estilo específico.</td></tr>
-          <tr><td>Auto-layout</td><td>Auto-disposición</td><td>A Figma feature that automatically arranges child elements within a frame, adapting to content changes. / Función de Figma que dispone automáticamente los elementos hijos dentro de un marco.</td></tr>
-          <tr><td>Color Palette</td><td>Paleta de Colores</td><td>A defined set of colors used consistently throughout a design system or product. / Conjunto definido de colores usados de manera consistente en un sistema de diseño o producto.</td></tr>
-          <tr><td>Typography Scale</td><td>Escala Tipográfica</td><td>A systematic set of font sizes and weights that define visual hierarchy in a design. / Conjunto sistemático de tamaños y pesos de fuente que define la jerarquía visual.</td></tr>
-          <tr><td>HUD (Heads-Up Display)</td><td>Pantalla de información superpuesta</td><td>In gaming, the visual layer displayed on screen that shows game information like health, score, and map. / En videojuegos, la capa visual que muestra información como salud, puntaje y mapa.</td></tr>
-          <tr><td>Localization</td><td>Localización</td><td>The process of adapting a product to a specific locale, including language, culture, and regional formats. / Proceso de adaptar un producto a un idioma, cultura y formato regional específicos.</td></tr>
-          <tr><td>Internationalization (i18n)</td><td>Internacionalización</td><td>The design process of making a product ready for adaptation to multiple languages and regions without re-engineering. / Proceso de diseño para preparar un producto para múltiples idiomas y regiones sin rediseñar.</td></tr>
-          <tr><td>Machine Translation</td><td>Traducción Automática</td><td>The use of software and AI to automatically translate text from one language to another. / Uso de software e IA para traducir automáticamente texto de un idioma a otro.</td></tr>
-          <tr><td>Translation Memory</td><td>Memoria de Traducción</td><td>A database that stores previously translated text segments to ensure consistency and speed up future translations. / Base de datos que almacena segmentos de texto traducidos previamente para garantizar consistencia.</td></tr>
-          <tr><td>Consistent Terms</td><td>Términos Consistentes</td><td>Words or phrases that must remain identical throughout an application, such as brand names or specific commands. / Palabras o frases que deben mantenerse idénticas en toda la aplicación.</td></tr>
-          <tr><td>Artificial Intelligence (AI)</td><td>Inteligencia Artificial (IA)</td><td>The simulation of human intelligence processes by computer systems, including learning, reasoning, and self-correction. / Simulación de procesos de inteligencia humana por sistemas computarizados.</td></tr>
-          <tr><td>Automation</td><td>Automatización</td><td>The use of technology to perform tasks with minimal human intervention, increasing efficiency and consistency. / Uso de tecnología para realizar tareas con mínima intervención humana.</td></tr>
-          <tr><td>Wireframe</td><td>Esquema de página</td><td>A low-fidelity visual representation of a UI layout, focusing on structure rather than visual design. / Representación visual de baja fidelidad de un diseño de UI, centrada en la estructura.</td></tr>
-          <tr><td>Prototype</td><td>Prototipo</td><td>An interactive simulation of a product used to test and validate design decisions before development. / Simulación interactiva de un producto usada para probar y validar decisiones de diseño antes del desarrollo.</td></tr>
-          <tr><td>Responsive Design</td><td>Diseño Responsivo</td><td>An approach to web design that makes web pages render well on a variety of devices and window or screen sizes. / Enfoque de diseño web que hace que las páginas se vean bien en diferentes dispositivos y tamaños de pantalla.</td></tr>
-          <tr><td>Accessibility (a11y)</td><td>Accesibilidad</td><td>The design practice of making products usable by people with disabilities, including visual, auditory, motor, or cognitive impairments. / Práctica de diseño para hacer productos utilizables por personas con discapacidades.</td></tr>
-          <tr><td>Cloud Computing</td><td>Computación en la Nube</td><td>The delivery of computing services including servers, storage, databases, networking, and software over the internet. / Entrega de servicios de computación como servidores, almacenamiento y software a través de internet.</td></tr>
-          <tr><td>API (Application Programming Interface)</td><td>Interfaz de Programación de Aplicaciones</td><td>A set of rules that allows different software applications to communicate with each other. / Conjunto de reglas que permite que diferentes aplicaciones de software se comuniquen entre sí.</td></tr>
-          <tr><td>Frontend</td><td>Interfaz de cara al usuario</td><td>The part of a web application that users interact with directly, built with HTML, CSS, and JavaScript. / Parte de una aplicación web con la que los usuarios interactúan directamente.</td></tr>
-          <tr><td>Backend</td><td>Parte del servidor</td><td>The server-side of a web application that handles business logic, databases, and application functionality. / Lado del servidor de una aplicación web que maneja lógica de negocio y bases de datos.</td></tr>
-          <tr><td>Version Control</td><td>Control de versiones</td><td>A system that records changes to files over time so specific versions can be recalled later. / Sistema que registra cambios en archivos a lo largo del tiempo para poder recuperar versiones específicas.</td></tr>
-          <tr><td>Repository</td><td>Repositorio</td><td>A storage location for software packages, often managed with version control systems like Git. / Ubicación de almacenamiento para paquetes de software, generalmente gestionada con sistemas de control de versiones.</td></tr>
-          <tr><td>Framework</td><td>Marco de trabajo</td><td>A pre-written code library that provides a structure and set of tools to help developers build applications more efficiently. / Biblioteca de código preescrita que proporciona estructura y herramientas para construir aplicaciones de manera eficiente.</td></tr>
-          <tr><td>User Research</td><td>Investigación de usuarios</td><td>The systematic study of target users to understand their behaviors, needs, and motivations to improve product design. / Estudio sistemático de usuarios objetivo para entender comportamientos, necesidades y motivaciones.</td></tr>
-          <tr><td>Usability</td><td>Usabilidad</td><td>The ease with which users can use a product to achieve their goals effectively, efficiently, and satisfactorily. / Facilidad con la que los usuarios pueden usar un producto para lograr sus objetivos de manera efectiva.</td></tr>
-          <tr><td>Iteration</td><td>Iteración</td><td>The repetition of a process where each cycle builds upon the results of the previous one to continuously improve a product. / Repetición de un proceso donde cada ciclo se basa en los resultados del anterior para mejorar continuamente.</td></tr>
-          <tr><td>Natural Language Processing (NLP)</td><td>Procesamiento del Lenguaje Natural</td><td>A branch of AI that helps computers understand, interpret, and generate human language. / Rama de la IA que ayuda a las computadoras a entender, interpretar y generar lenguaje humano.</td></tr>
-          <tr><td>Scalability</td><td>Escalabilidad</td><td>The ability of a system to handle increased workload or demand without compromising performance. / Capacidad de un sistema para manejar mayor carga de trabajo sin comprometer el rendimiento.</td></tr>
-          <tr><td>Agile</td><td>Ágil</td><td>A project management and software development approach that encourages flexible, iterative work and collaboration. / Enfoque de gestión de proyectos y desarrollo de software que fomenta el trabajo flexible e iterativo.</td></tr>
-          <tr><td>Data Ethics</td><td>Ética de datos</td><td>The branch of ethics that evaluates data practices to ensure they align with moral principles, particularly regarding privacy, consent, and fairness. / Rama de la ética que evalúa prácticas de datos para garantizar su alineación con principios morales.</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+  <!-- Table -->
+  <div class="table-responsive">
+    <table class="glossary-table" id="glossaryTable">
+      <thead>
+        <tr>
+          <th>English</th>
+          <th>Español</th>
+          <th>Definición (Cambridge Dictionary)</th>
+        </tr>
+      </thead>
+      <tbody id="glossaryBody">
+        <!-- JS renders rows -->
+      </tbody>
+    </table>
+  </div>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">COL<span>5.0</span></div>
-      <p>Proyecto académico · SENA – Centro de Manufactura en Textil y Cuero · 2025</p>
-      <nav class="footer-nav">
-        <a href="../index.html">Inicio</a>
-        <a href="conferencias.html">Conferencias</a>
-        <a href="glossary.html">Glossary</a>
-        <a href="conclusion.html">Conclusión</a>
-      </nav>
-    </div>
-  </footer>
+</div>
+</main>
 
-  <script src="../js/lang.js"></script>
-  <script>
-    function filterGlossary() {
-      const q = document.getElementById('searchInput').value.toLowerCase();
-      const rows = document.querySelectorAll('#glossaryTable tbody tr');
-      let count = 0;
-      rows.forEach(row => {
-        const text = row.textContent.toLowerCase();
-        const show = text.includes(q);
-        row.style.display = show ? '' : 'none';
-        if (show) count++;
-      });
-      document.getElementById('termCount').textContent = count;
-    }
-  </script>
+<footer class="site-footer py-4 text-center">
+  <p class="mb-0">© 2026 Colombia 5.0 <br/> · Desarrollado por Vanessa González. · SENA - Centro de Manufactura en Textil y Cuero. <br/> · Información adaptada de la página oficial de TIC. </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const terms = [
+  { en:"Artificial Intelligence", es:"Inteligencia Artificial", def:"La ciencia de hacer que las computadoras hagan cosas que los seres humanos." },
+  { en:"Agent", es:"Agente", def:"Uns persona o cosa que produce un efecto o cambio particular." },
+  { en:"Algorithm", es:"Algoritmo", def:"Un conjunto de instrucciones o reglas matemáticaas que, especialmente si se le dan a una computadora, ayudarán a calcular la respuesta a un problema." },
+  { en:"API (Application Programming Interface)", es:"Interfaz de Programación de Aplicaciones", def:"Interfaz de programación de aplicaciones, una forma de comunicarse con un programa informático o servicio de internet en particular." },
+  { en:"Automation", es:"Automatización", def:"El uso de máquinas y computadoras que pueden funcionar sin necesidad de control humano." },
+  { en:"Data", es:"Datos", def:"Información, especialmente hechos o cifras, recopilada para ser examinada, considerada y utilizada para ayudar en la toma de decisiones." },
+  { en:"Database", es:"Base de datos", def:"Una gran cantidad de información alamacenada en un sistema informático de tal manera que pueda ser consultada o modificada fácilmente." },
+  { en:"Debug", es:"Depurar", def:"Eliminar errores/fallos de un programa informático." },
+  { en:"Deployment", es:"Despliegue", def:"El despliegue de tecnologías." },
+  { en:"Framework", es:"Marco de trabajo", def:"Un sistema de reglas, ideas o creencias que se utiliza para planificar o decidir algo." },
+  { en:"Frontend", es:"Interfaz de usuario", def:"Las partes del hardware, software, lenguajes de programación, sistema operativo; en una aplicación móvilo sitio web con las que el usuario interactúa." },
+  { en:"Game Design", es:"Diseño de videojuegos", def:"The process of creating the content and rules of a game, applying both artistic and technical considerations." },
+  { en:"HUD (Heads-Up Display)", es:"Pantalla de información", def:"A transparent display that shows data without requiring users to look away from their usual viewpoint, commonly used in video games." },
+  { en:"Interface", es:"Interfaz", def:"The way a computer program presents itself to the user, or the way the user gives instructions to the computer program." },
+  { en:"Iteration", es:"Iteración", def:"The process of repeating a set of instructions until a condition is met or a desired result is achieved." },
+  { en:"Large Language Model", es:"Modelo de lenguaje grande", def:"A type of artificial intelligence trained on very large amounts of text data, able to generate natural-sounding text and understand complex language patterns." },
+  { en:"Machine Learning", es:"Aprendizaje automático", def:"A type of artificial intelligence in which computers use huge amounts of data to learn how to do tasks rather than being programmed to do them." },
+  { en:"Open Source", es:"Código abierto", def:"Used to describe software or information that is available to everyone to use and change as they want, usually without having to pay." },
+  { en:"Playtesting", es:"Prueba de juego", def:"The process of testing a video game by playing it in order to find problems and improve the experience." },
+  { en:"Prompt", es:"Instrucción/Indicación", def:"A piece of text or question given to an AI system to produce a desired output or response." },
+  { en:"Prototype", es:"Prototipo", def:"The first model of something, such as a machine or other industrial product, from which all later forms are developed." },
+  { en:"Repository", es:"Repositorio", def:"A central place where data is stored and managed, commonly used to refer to code storage on platforms like GitHub." },
+  { en:"Responsive Design", es:"Diseño responsivo", def:"An approach to web design that makes web pages render well on a variety of devices and window or screen sizes." },
+  { en:"Scalability", es:"Escalabilidad", def:"The ability of a system, network, or process to handle a growing amount of work in a capable manner, or its potential to be enlarged to accommodate that growth." },
+  { en:"Software", es:"Software", def:"The programs and other operating information used by a computer." },
+  { en:"UI (User Interface)", es:"Interfaz de usuario", def:"The way that something, especially a computer program, presents itself to or communicates with the person using it." },
+  { en:"UX (User Experience)", es:"Experiencia de usuario", def:"The overall experience of a person using a product such as a website or computer application, especially in terms of how easy or pleasing it is to use." },
+  { en:"Version Control", es:"Control de versiones", def:"A system that records changes to a file or set of files over time so that you can recall specific versions later." },
+  { en:"Wireframe", es:"Esquema de interfaz", def:"A basic visual guide used in web design to suggest the layout of a website or application, without design details." },
+  { en:"Workflow", es:"Flujo de trabajo", def:"The sequence of processes through which a piece of work passes from start to completion." },
+];
+
+function renderGlossary(list) {
+  const body = document.getElementById('glossaryBody');
+  body.innerHTML = list.map((t,i) => `
+    <tr>
+      <td>${t.en}</td>
+      <td>${t.es}</td>
+      <td>${t.def}</td>
+    </tr>
+  `).join('');
+  document.getElementById('termCount').textContent = list.length + ' términos';
+}
+
+function filterGlossary() {
+  const q = document.getElementById('glossarySearch').value.toLowerCase();
+  const filtered = terms.filter(t =>
+    t.en.toLowerCase().includes(q) ||
+    t.es.toLowerCase().includes(q) ||
+    t.def.toLowerCase().includes(q)
+  );
+  renderGlossary(filtered);
+}
+
+renderGlossary(terms);
+</script>
+<script src="../js/main.js"></script>
 </body>
 </html>
+
