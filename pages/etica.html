@@ -1,96 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conclusión – Colombia 5.0</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ética & Conclusión – Colombia 5.0</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="nav-brand">COL<span>5.0</span></div>
-    <ul class="nav-links">
-      <li><a href="../index.html">Inicio / Home</a></li>
-      <li><a href="conferencias.html">Conferencias</a></li>
-      <li><a href="glossary.html">Glossary</a></li>
-      <li><a href="conclusion.html" class="active">Conclusión</a></li>
-    </ul>
-    <button class="lang-btn" onclick="toggleLang()">EN / ES</button>
-  </nav>
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">
+      <span class="brand-co">Colombia</span><span class="brand-num">5.0</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferencias.html">Conferencias</a></li>
+        <li class="nav-item"><a class="nav-link" href="glossary.html">Glossary</a></li>
+        <li class="nav-item"><a class="nav-link active" href="etica.html">Ética & Conclusión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <section class="conclusion-section">
-    <div class="container">
-      <div class="conclusion-hero">
-        <h1 data-es="Conclusión y Reflexión Ética" data-en="Conclusion and Ethical Reflection">Conclusión y Reflexión Ética</h1>
-        <p data-es="¿Cómo se implementa la ética en la tecnología empresarial? Una reflexión sobre inteligencia artificial, automatización, datos y responsabilidad profesional." data-en="How is ethics implemented in business technology? A reflection on artificial intelligence, automation, data, and professional responsibility.">¿Cómo se implementa la ética en la tecnología empresarial? Una reflexión sobre inteligencia artificial, automatización, datos y responsabilidad profesional.</p>
+<!-- HERO -->
+<section class="ethics-hero">
+  <div class="container">
+    <span class="section-label">Reflexión Final · Colombia 5.0</span>
+    <h1 class="section-title mt-2 text-white">Ética en la<br/><span class="accent">Tecnología Empresarial</span></h1>
+    <p class="mt-3" style="color:#888;max-width:640px;">Una reflexión crítica sobre cómo los principios éticos deben guiar el desarrollo y la implementación de la tecnología en el mundo empresarial y social.</p>
+  </div>
+</section>
+
+<main class="py-5" style="background:var(--dark);">
+<div class="container">
+
+  <!-- PREGUNTA CENTRAL -->
+  <div class="text-center mb-5">
+    <div style="display:inline-block;background:rgba(247,201,72,0.06);border:1px solid rgba(247,201,72,0.2);border-radius:16px;padding:2rem 3rem;max-width:700px;">
+      <p style="font-family:'Bebas Neue';font-size:1rem;letter-spacing:4px;color:var(--accent);margin-bottom:0.5rem;">PREGUNTA CENTRAL</p>
+      <h2 style="font-family:'Bebas Neue';font-size:clamp(1.6rem,4vw,2.5rem);letter-spacing:2px;color:#fff;margin:0;">¿Cómo se implementa la ética en la tecnología empresarial?</h2>
+    </div>
+  </div>
+
+  <!-- INTELIGENCIA ARTIFICIAL -->
+  <div class="ethics-block mb-4">
+    <div class="row align-items-start g-4">
+      <div class="col-md-1 text-center">
+        <i class="fa-solid fa-brain fa-2x" style="color:var(--accent);"></i>
       </div>
-
-      <!-- Ethics grid -->
-      <div class="ethics-grid">
-        <div class="ethics-card">
-          <div class="ethics-icon">🤖</div>
-          <h3 data-es="Inteligencia Artificial" data-en="Artificial Intelligence">Inteligencia Artificial</h3>
-          <p data-es="La IA en el entorno empresarial debe ser transparente, explicable y libre de sesgos. Las herramientas de IA que vimos en Colombia 5.0 —desde asistentes técnicos hasta sistemas de traducción automática— deben diseñarse con supervisión humana constante, evitando decisiones automatizadas que puedan perjudicar a personas sin posibilidad de revisión o apelación." data-en="AI in the business environment must be transparent, explainable, and free of bias. The AI tools seen at Colombia 5.0 — from technical assistants to automatic translation systems — must be designed with constant human oversight, avoiding automated decisions that could harm people without possibility of review or appeal.">La IA en el entorno empresarial debe ser transparente, explicable y libre de sesgos. Las herramientas de IA que vimos en Colombia 5.0 —desde asistentes técnicos hasta sistemas de traducción automática— deben diseñarse con supervisión humana constante, evitando decisiones automatizadas que puedan perjudicar a personas sin posibilidad de revisión o apelación.</p>
-        </div>
-        <div class="ethics-card">
-          <div class="ethics-icon">🔒</div>
-          <h3 data-es="Uso Responsable de Datos" data-en="Responsible Use of Data">Uso Responsable de Datos</h3>
-          <p data-es="Toda recopilación y procesamiento de datos de usuarios debe seguir principios de privacidad por diseño: recopilar solo lo necesario, informar al usuario, proteger los datos con cifrado robusto y garantizar el derecho a eliminación. En UI de videojuegos, datos de comportamiento del jugador son especialmente sensibles y no deben usarse con fines distintos a mejorar la experiencia sin consentimiento explícito." data-en="All collection and processing of user data must follow privacy-by-design principles: collect only what is necessary, inform the user, protect data with robust encryption, and guarantee the right to deletion. In game UI, player behavior data is especially sensitive and must not be used for purposes other than improving the experience without explicit consent.">Toda recopilación y procesamiento de datos de usuarios debe seguir principios de privacidad por diseño: recopilar solo lo necesario, informar al usuario, proteger los datos con cifrado robusto y garantizar el derecho a eliminación.</p>
-        </div>
-        <div class="ethics-card">
-          <div class="ethics-icon">⚙️</div>
-          <h3 data-es="Automatización" data-en="Automation">Automatización</h3>
-          <p data-es="La automatización que vimos en los flujos de localización es poderosa, pero conlleva riesgos si elimina puestos de trabajo sin un plan de transición. Las empresas éticas integran la automatización como complemento de las capacidades humanas, no como sustituto, y redistribuyen el valor generado en beneficio de sus equipos y comunidades." data-en="The automation we saw in localization workflows is powerful, but carries risks if it eliminates jobs without a transition plan. Ethical companies integrate automation as a complement to human capabilities, not a substitute, and redistribute the generated value to benefit their teams and communities.">La automatización que vimos en los flujos de localización es poderosa, pero conlleva riesgos si elimina puestos de trabajo sin un plan de transición. Las empresas éticas integran la automatización como complemento de las capacidades humanas, no como sustituto.</p>
-        </div>
-        <div class="ethics-card">
-          <div class="ethics-icon">🌍</div>
-          <h3 data-es="Impacto Social" data-en="Social Impact">Impacto Social</h3>
-          <p data-es="El diseño de interfaces —como el que aprendimos en el taller de Game UI Systems— tiene impacto directo en millones de personas. Interfaces manipuladoras, patrones oscuros de diseño o juegos diseñados para generar adicción son problemas éticos graves. El diseñador y el desarrollador son responsables del impacto que sus creaciones generan en la sociedad." data-en="Interface design — like what we learned in the Game UI Systems workshop — has a direct impact on millions of people. Manipulative interfaces, dark design patterns, or games designed to create addiction are serious ethical problems. Designers and developers are responsible for the impact their creations generate in society.">El diseño de interfaces tiene impacto directo en millones de personas. Interfaces manipuladoras o juegos diseñados para generar adicción son problemas éticos graves. El diseñador y el desarrollador son responsables del impacto que sus creaciones generan en la sociedad.</p>
-        </div>
-      </div>
-
-      <!-- Bilingual conclusion text -->
-      <div class="conclusion-text">
-        <h2 data-es="Reflexión Final" data-en="Final Reflection">Reflexión Final</h2>
-
-        <div class="bilingual-conclusion">
-          <div class="lang-label">🇨🇴 ESPAÑOL</div>
-          <p>Participar en Colombia 5.0 fue una experiencia que amplió significativamente mi comprensión sobre el estado actual de la tecnología en Colombia y la región. A través del taller de Game UI Systems con Andrés Felipe Pisso Tobar, comprendí que el diseño no es solo estética: es arquitectura de información, comunicación y responsabilidad. Un sistema de diseño bien construido no solo ahorra tiempo al equipo; también garantiza que cada usuario tenga una experiencia consistente, comprensible y accesible, independientemente del dispositivo o contexto.</p>
-          <br>
-          <p>La conferencia sobre automatización y localización con IA me recordó que las herramientas más poderosas siempre requieren el criterio más cuidadoso. La IA puede traducir millones de palabras en segundos, pero sin supervisión humana, puede perpetuar errores culturales, sesgos lingüísticos o interpretaciones incorrectas que ningún algoritmo puede detectar solo. La tecnología empresarial solo es verdaderamente poderosa cuando se ejerce con responsabilidad ética.</p>
-          <br>
-          <p>En definitiva, Colombia 5.0 me enseñó que ser un profesional tecnológico hoy implica más que saber programar o diseñar: implica comprender el impacto humano de cada decisión técnica, defender la privacidad y dignidad de los usuarios, y contribuir a un ecosistema tecnológico que sea justo, inclusivo y sostenible para toda la sociedad.</p>
-        </div>
-
-        <div class="bilingual-conclusion en-panel">
-          <div class="lang-label">🇺🇸 ENGLISH</div>
-          <p>Participating in Colombia 5.0 was an experience that significantly expanded my understanding of the current state of technology in Colombia and the region. Through the Game UI Systems workshop with Andrés Felipe Pisso Tobar, I understood that design is not just aesthetics: it is information architecture, communication, and responsibility. A well-built design system not only saves the team time; it also ensures that every user has a consistent, understandable, and accessible experience, regardless of device or context.</p>
-          <br>
-          <p>The talk on automation and AI localization reminded me that the most powerful tools always require the most careful judgment. AI can translate millions of words in seconds, but without human oversight, it can perpetuate cultural errors, linguistic biases, or misinterpretations that no algorithm can detect alone. Business technology is only truly powerful when exercised with ethical responsibility.</p>
-          <br>
-          <p>Ultimately, Colombia 5.0 taught me that being a technology professional today means more than knowing how to code or design: it means understanding the human impact of every technical decision, defending the privacy and dignity of users, and contributing to a technological ecosystem that is fair, inclusive, and sustainable for all of society.</p>
-        </div>
-
-        <h2 data-es="Responsabilidad Profesional en el Desarrollo de Software" data-en="Professional Responsibility in Software Development">Responsabilidad Profesional en el Desarrollo de Software</h2>
-        <p data-es="El evento Colombia 5.0 dejó en evidencia que la ética no es un módulo separado del desarrollo de software: es transversal a cada decisión. Desde la primera línea de código hasta el último píxel de una interfaz, el profesional tecnológico toma decisiones que afectan vidas reales. Ser responsable implica documentar correctamente, hacer pruebas rigurosas, pensar en los casos extremos, incluir a personas con discapacidades en el proceso de diseño, y resistir la presión de lanzar productos que no estén listos o que puedan causar daño." data-en="The Colombia 5.0 event made it clear that ethics is not a separate module of software development: it is cross-cutting to every decision. From the first line of code to the last pixel of an interface, the technology professional makes decisions that affect real lives. Being responsible means documenting correctly, rigorous testing, thinking about edge cases, including people with disabilities in the design process, and resisting pressure to launch products that are not ready or could cause harm.">El evento Colombia 5.0 dejó en evidencia que la ética no es un módulo separado del desarrollo de software: es transversal a cada decisión. Desde la primera línea de código hasta el último píxel de una interfaz, el profesional tecnológico toma decisiones que afectan vidas reales. Ser responsable implica documentar correctamente, hacer pruebas rigurosas, pensar en los casos extremos, incluir a personas con discapacidades en el proceso de diseño, y resistir la presión de lanzar productos que no estén listos o que puedan causar daño.</p>
+      <div class="col-md-11">
+        <h3><span class="accent">Inteligencia Artificial</span></h3>
+        <p>La inteligencia artificial no es éticamente neutral. Cada modelo, cada conjunto de datos y cada decisión de diseño refleja valores humanos, y por tanto puede reproducir sesgos, discriminación y exclusión. En el contexto empresarial colombiano, esto significa que las compañías que adoptan IA tienen la responsabilidad de auditar sus sistemas: ¿a quiénes favorecen sus algoritmos de contratación? ¿Sus modelos de crédito excluyen a poblaciones históricamente marginadas?</p>
+        <p>Implementar ética en la IA empresarial requiere transparencia algorítmica, es decir, que las decisiones tomadas por sistemas automáticos sean explicables y auditables. También exige diversidad en los equipos que construyen estos sistemas, porque un equipo homogéneo produce herramientas que solo sirven bien a personas similares a quienes las construyeron. Colombia 5.0 nos recordó que la IA del futuro debe ser diseñada para todos, no solo para quienes tienen más acceso tecnológico.</p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">COL<span>5.0</span></div>
-      <p>Proyecto académico · SENA – Centro de Manufactura en Textil y Cuero · 2025</p>
-      <nav class="footer-nav">
-        <a href="../index.html">Inicio</a>
-        <a href="conferencias.html">Conferencias</a>
-        <a href="glossary.html">Glossary</a>
-        <a href="conclusion.html">Conclusión</a>
-      </nav>
+  <!-- USO RESPONSABLE DE DATOS -->
+  <div class="ethics-block orange mb-4">
+    <div class="row align-items-start g-4">
+      <div class="col-md-1 text-center">
+        <i class="fa-solid fa-shield-halved fa-2x" style="color:var(--accent2);"></i>
+      </div>
+      <div class="col-md-11">
+        <h3><span style="color:var(--accent2);">Uso Responsable de Datos</span></h3>
+        <p>Los datos son el petróleo del siglo XXI, y como el petróleo, su explotación sin control genera daños profundos. El uso responsable de los datos empresariales implica respetar la privacidad de los usuarios, obtener consentimiento informado real (no letras pequeñas que nadie lee), y usar la información únicamente para los propósitos declarados.</p>
+        <p>En Colombia, la Ley 1581 de 2012 (Ley de Protección de Datos Personales) establece el marco legal, pero la ética va más allá de la legalidad. Una empresa puede cumplir la ley y aun así manipular psicológicamente a sus usuarios con los datos que recolecta. La ética exige preguntarse no solo "¿podemos hacer esto?" sino "¿debemos hacerlo?". Las conferencias de Colombia 5.0 subrayaron que la confianza del usuario es el activo más valioso de cualquier empresa tecnológica, y que se destruye mucho más rápido de lo que se construye.</p>
+      </div>
     </div>
-  </footer>
-  <script src="../js/lang.js"></script>
+  </div>
+
+  <!-- AUTOMATIZACIÓN -->
+  <div class="ethics-block mb-4">
+    <div class="row align-items-start g-4">
+      <div class="col-md-1 text-center">
+        <i class="fa-solid fa-gears fa-2x" style="color:var(--accent);"></i>
+      </div>
+      <div class="col-md-11">
+        <h3><span class="accent">Automatización</span></h3>
+        <p>La automatización promete eficiencia, pero plantea una pregunta incómoda: ¿eficiencia para quién? Cuando una empresa automatiza procesos que antes requerían trabajo humano, los beneficios económicos suelen concentrarse en los accionistas mientras los trabajadores desplazados enfrentan desempleo sin red de apoyo. Esto no es un problema técnico, es un problema ético y político.</p>
+        <p>Una implementación ética de la automatización empresarial debería incluir planes de reconversión laboral, distribución equitativa de los beneficios de productividad y diálogo genuino con las comunidades afectadas antes, no después, de tomar decisiones. La tecnología agéntica presentada en Colombia 5.0 tiene el potencial de transformar industrias enteras en Colombia; la pregunta es si lo hará de manera que amplíe oportunidades para todos o que concentre el poder en unos pocos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPACTO SOCIAL -->
+  <div class="ethics-block orange mb-4">
+    <div class="row align-items-start g-4">
+      <div class="col-md-1 text-center">
+        <i class="fa-solid fa-earth-americas fa-2x" style="color:var(--accent2);"></i>
+      </div>
+      <div class="col-md-11">
+        <h3><span style="color:var(--accent2);">Impacto Social de la Tecnología</span></h3>
+        <p>La tecnología empresarial no existe en el vacío; opera dentro de ecosistemas sociales complejos. Un videojuego mal diseñado puede generar adicción. Una plataforma de redes sociales puede amplificar desinformación. Un sistema de moderación de contenido puede silenciar voces minoritarias. Ninguno de estos impactos fue necesariamente intencional, pero todos son responsabilidad de quienes diseñaron los sistemas.</p>
+        <p>Colombia 5.0 nos enseñó que los profesionales de la tecnología, ya sean diseñadores UX como Andrés Pisso o arquitectos de sistemas de IA como Luis Caro, tienen una responsabilidad profesional que va más allá de hacer que el producto funcione. Deben considerar activamente cómo sus creaciones afectarán a personas reales en contextos reales, especialmente a las más vulnerables.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESPONSABILIDAD PROFESIONAL -->
+  <div class="ethics-block mb-4">
+    <div class="row align-items-start g-4">
+      <div class="col-md-1 text-center">
+        <i class="fa-solid fa-code fa-2x" style="color:var(--accent);"></i>
+      </div>
+      <div class="col-md-11">
+        <h3><span class="accent">Responsabilidad Profesional en el Desarrollo de Software</span></h3>
+        <p>Como futuros desarrolladores formados en el SENA, tenemos una responsabilidad particular. El código que escribiremos afectará vidas reales: los datos que manejemos pertenecen a personas reales; las interfaces que diseñemos serán usadas por ciudadanos de todas las edades, capacidades y contextos. Esta responsabilidad no es opcional ni secundaria; es central a lo que significa ser un profesional de la tecnología.</p>
+        <p>Implementar ética en el desarrollo de software significa adoptar prácticas como el diseño inclusivo y accesible, el desarrollo orientado a pruebas, la revisión de código con perspectiva ética, y la negativa profesional a construir sistemas que sabemos serán usados para dañar. No se trata de obstaculizar el progreso, sino de asegurarnos de que el progreso beneficie a la mayor cantidad posible de personas.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCLUSIÓN FINAL -->
+  <div style="background:linear-gradient(135deg,rgba(247,201,72,0.08),rgba(224,92,42,0.08));border:1px solid rgba(247,201,72,0.15);border-radius:16px;padding:2.5rem;text-align:center;margin-top:3rem;">
+    <i class="fa-solid fa-quote-left fa-2x mb-3" style="color:var(--accent);opacity:0.5;"></i>
+    <h3 style="font-family:'Bebas Neue';font-size:2rem;letter-spacing:2px;color:#fff;">Conclusión</h3>
+    <p style="max-width:700px;margin:1rem auto 0;font-size:1.05rem;color:#bbb;">Colombia 5.0 demostró que el futuro tecnológico de Colombia está siendo construido por personas apasionadas, creativas y conscientes. La ética no frena la innovación; la hace más humana, más duradera y más justa. Como estudiantes y futuros profesionales, tenemos la oportunidad, y la obligación, de construir tecnología que sirva a Colombia completa.</p>
+  </div>
+
+</div>
+</main>
+
+<footer class="site-footer py-4 text-center">
+  <p class="mb-0">© 2026 Colombia 5.0 <br/> · Desarrollado por Vanessa González. · SENA - Centro de Manufactura en Textil y Cuero. <br/> · Información adaptada de la página oficial de TIC. </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
+
