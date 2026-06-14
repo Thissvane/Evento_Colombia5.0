@@ -2,9 +2,6 @@
 
 Proyecto académico desarrollado para el **SENA – Centro de Manufactura en Textil y Cuero**, como parte de la actividad de documentación del evento tecnológico **Colombia 5.0**.
 
-##  Ver el sitio
-[GitHub Pages Link – https://thissvane.github.io/Evento_Colombia5.0/]
-
 
 ```
 
